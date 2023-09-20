@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.as-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin: 20px 0;
+}
+
+section {
+  width: 100%;
+}
+
+.empty {
+  height: 100px;
+}
+
+button {
+  min-width: 10px;
+}
+
+/* Loader */
+
+.loader {
+  width: 100%;
+  height: 90vh;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+
+/* Header */
+
+header {
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+}
+
+header a {
+  text-decoration: none;
+  color: #000;
+  font-size: 28px;
+}
+
+.gradient-txt {
+  background: linear-gradient(
+    150deg,
+    rgba(0, 245, 255, 1) 0%,
+    rgba(0, 1, 255, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+/* login_signup */
+
+.signup_section {
+  width: 100%;
+  height: 100vh;
+  overflow: none;
+  background-color: #85ffbd;
+  background-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sing_up {
+  transition: 0.5s all;
+  margin: 0 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 20px;
+  background: #fff !important;
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 3px;
+  border-image-source: linear-gradient(
+    150deg,
+    rgba(0, 245, 255, 1) 0%,
+    rgba(0, 1, 255, 1) 100%
+  );
+}
+
+.form-label {
+  transition: 0.5s all;
+  margin: 0 !important;
+  font-weight: 500;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.form-input {
+  transition: 0.3s all;
+  display: block;
+  width: 400px;
+  border-radius: 5px !important;
+  border-image-slice: 1;
+  border-width: 2px;
+  margin-top: 3px;
+  border-image-source: linear-gradient(
+    150deg,
+    rgba(0, 245, 255, 1) 0%,
+    rgba(0, 1, 255, 1) 100%
+  );
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  outline: none;
+  padding: 10px;
+  font-style: 19px;
+}
+
+.form-input:focus {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transform: scale(1.06);
+}
+
+.form-input::placeholder {
+  color: #000 !important;
+}
+
+.form-button {
+  transition: 0.3s all;
+  padding: 10px 20px;
+  font-size: 19px;
+  margin-top: 5px;
+  background: linear-gradient(
+    150deg,
+    rgba(0, 245, 255, 1) 0%,
+    rgba(0, 1, 255, 1) 100%
+  );
+  border: none;
+  color: #fff;
+}
+
+.form-button:hover {
+  transform: scale(1.06);
+  border-radius: 5px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+/* Category */
+
+.category-card {
+  transition: 0.5s all;
+  border: 10px solid;
+  border-image-slice: 1;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  overflow: hidden;
+  border-width: 3px;
+  border-image-source: linear-gradient(
+    150deg,
+    rgba(0, 245, 255, 1) 0%,
+    rgba(0, 1, 255, 1) 100%
+  );
+}
+
+.categories-header {
+  display: flex;
+}
+
+.categories-header p {
+  padding: 10px 20px;
+  display: flex;
+  font-size: 20px;
+  margin: 0;
+  border: 1px solid #85ffbd;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  color: #000;
+  align-items: center;
+}
+
+.categories-header > input {
+  margin-top: 0;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  width: 100%;
+  border: 1px solid #85ffbd;
+  border-radius: 0 !important;
+  transform: scale(1) !important;
+}
+
+.categories-header input:hover {
+  transform: scale(1) !important;
+}
+
+.img-div {
+  overflow: hidden;
+}
+
+.img-div img {
+  transition: 0.3s all;
+}
+
+.img-div img:hover {
+  transform: scale(1.1);
+}
+
+.btn-div button {
+  transition: 0.3s all;
+}
+
+.btn-div button:hover {
+  letter-spacing: 1.1px;
+}
+
+/* responsive */
+
+@media (max-width: 1000px) {
+  .as-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .as-row {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
